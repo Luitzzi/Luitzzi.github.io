@@ -1,0 +1,79 @@
+:root{
+    --textColor:#FFFFFF;
+    /*Colors*/
+    --backgroundColor:#5388b1; 
+    --darkerBackgroundColor:#99adcc;
+    --textBoxBackgroundColor:rgb(114, 103, 103);
+    --accentBackgroundColor:#41DCE1;
+    --imagesBackgrounds:#cacace;
+
+    --headlineTextColor:rgb(46,49,146);
+    --subheadlineTextColor:rgb(155, 146, 146);
+    /*Nav-Bar*/
+    --navHeight: 70px;
+    --navLinksWidth: 150px;
+    /*About-Me-Bg-Arrows*/
+    --widthArrows: 40px;
+
+    /*Projects*/
+    --projectBackground: #7f96b8;
+    --secondHeadline: rgb(206, 114, 10);
+    --secondHeadlineSize: 40px;
+    --textSize: 25px;
+    --gaps: 50px;
+    --imagesGaps: 50px;
+    --mainTextGaps: 15px;
+    --insertedGaps: 10px;
+    --liMarginLeft: 20px;
+    --insertedMarginLeft: 30px;
+    --overlayColor: rgb(0, 0, 0);
+}
+
+/*Colors-Dark-Mode*/
+.darkMode{
+    --backgroundColor:#314453; 
+    --darkerBackgroundColor:#344d61;
+    --textBoxBackgroundColor:rgb(114, 103, 103);
+    --accentBackgroundColor:#41DCE1;
+    --textColor:#dbd4d4;
+    /*Projects*/
+    --projectBackground: #3e516e;
+    --secondHeadline: rgb(206, 114, 10);
+    --overlayColor:rgb(0, 0, 0);
+}
+
+/* Languages Classes*/
+.german{
+    display: flex;
+}
+.english{
+    display: none;
+}
+
+/*About-Me Bg Imges Classes*/
+.displayed{
+    position: static;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+.hidden{
+    position: absolute;
+    opacity: 0;
+}
+
+
+
+*{
+    margin:0%;
+    padding:0%;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--textColor);
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-color: var(--darkerBackgroundColor);
+    transition: all 0.3s linear;
+}

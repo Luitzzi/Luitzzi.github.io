@@ -1,0 +1,341 @@
+#projectBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Display */
+
+#displayBox{
+    max-width: 1200px;
+    min-width: none;
+    margin: var(--gaps) 20px;
+
+    background-color: var(--projectBackground);
+    border: solid 1px black;
+    box-shadow: 0px 0px 5px 0px black;
+}
+#headline{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--imagesBackgrounds);
+    border-bottom: solid 1px black;
+}
+#headline h2{
+    color: var(--headlineTextColor);
+    text-align: center;
+}
+
+
+#origin{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: var(--gaps);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    background-color: var(--textBoxBackgroundColor);
+}
+#origin p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+#display{
+    display: flex;
+    flex-direction: column;
+}
+#display .displayImages{
+    display: flex;
+    padding: var(--gaps) 0px;
+    margin-left: var(--imagesGaps);
+}
+#display .displayBorder{
+    border-top: solid 1px black;
+}
+.displayImages .dImage{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+    .dImage img{
+        width: 100%;
+        height: auto;
+        border: solid 1px black;
+    }
+    /* Overlay */
+    .overlay{
+        width: 100%;
+        height: 40px;
+        position:absolute;
+        bottom: 4px;
+        left: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;    
+    }
+    .overlayObject{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        backdrop-filter: blur(2px) saturate(200%);
+        -webkit-backdrop-filter: blur(2px) saturate(200%);
+        background-color: rgba(17, 25, 40, 0.26);
+        border-top: solid 1px black;
+    }
+    .overlayObject p{
+        text-align: center;
+        color: var(--overlayColor);
+    }
+    #whiteOverlay p{
+        color: white;
+    }
+
+
+    .displayImages .dText{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        --secondHeadlineSize: 30px;
+        --textSize: 20px;
+    }
+        .dTextBox{
+            width: 100%;
+            height: 100%;
+            padding: 0px var(--imagesGaps);
+        }
+        .textGap{
+            height: 100%;
+            padding: 0px 20px;
+            background-color: var(--textBoxBackgroundColor);
+        }
+        .dText h4{
+            padding-top: 10px;
+            color: var(--secondHeadline);
+            font-size: 30px;
+        }
+        .dText p{
+            padding-bottom: 10px;
+        }
+        .dText ul{
+            flex-direction: column;
+        }
+        .dText li{
+            margin-left: var(--liMarginLeft);
+            font-size: var(--textSize);
+        }
+        .dText .mainList{
+            margin-top: var(--mainTextGaps);
+            
+        }
+        .inserted{
+            margin-left: var(--insertedMarginLeft);
+            
+        }
+        .inserted li{
+            margin-top: var(--insertedGaps);
+        }
+
+        @media(max-width:1100px){
+            #display .displayImages{
+                --imagesGaps: 30px;
+            }
+            .dText{
+                --liMarginLeft: 10px;
+                --insertedMarginLeft: 20px;
+                --mainTextGaps: 10px;
+                --insertedGaps: 5px;
+            } 
+            .dText h4{
+                font-size: 20px;
+            }
+            .dText li{
+                font-size: 15px;
+            }
+        }
+        @media (min-width:640px) and (max-width:910px){
+            #display .displayImages{
+                --imagesGaps: 10px;
+            }
+        }
+        @media(max-width:639px){
+            #displayBox{
+                --gaps: 25px;
+                --mainTextGaps: 5px;
+            }
+            #display .displayImages{
+                flex-direction: column;
+                align-items: center;
+                --imagesGaps: 40px;
+        
+                margin-right: var(--imagesGaps);
+            }
+            .displayImages .dImage{
+                width: 100%;
+            }
+            .displayImages .dTextBox{
+                width: 100%;
+                padding: 0px;
+                
+            }
+            .displayImages .dText{
+                width: 100%;
+            }
+                .dText{
+                    width: 100%;
+                    height: 100%;
+                    --textSize: 15px;
+                    --liMarginLeft: 10px;
+                    --insertedMarginLeft: 20px;
+                } 
+                .dText h4{
+                    display: none;
+                }
+                .dText p{
+                    padding: 10px 0px;
+                }
+            .overlay{
+                display: none;
+            }
+        }
+        @media(max-width:450px){
+            #displayBox{
+                margin: var(--gaps) 10px;
+            }
+            #headline{
+                font-size: 13px;
+                font-weight: 700;
+            }
+            #display .displayImages{
+                --imagesGaps: 10px;
+            }
+            .dText{
+                --insertedMarginLeft: 11px;
+            }
+        }
+
+/*________________________________________________________*/
+
+
+/* Summary */
+
+#summary{
+    margin: 20px 0px;
+
+    background-color: var(--projectBackground);
+}
+#summaryHeadline{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--imagesBackgrounds);
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+#summaryHeadline h3{
+    color: var(--headlineTextColor);
+}
+#mainImg{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 20px;
+    position: relative;
+
+    border: solid 1px black;
+    transition: 0.7s ease-in-out;
+}
+#buttonAlign{
+    height: 25px;
+    width: 40%;
+    position: absolute;
+    top: 92%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#timeBar{
+    width: 0;
+    height: 100%;
+    padding: 5px;
+    justify-content: flex-start;
+
+    background-color: var(--imagesBackgrounds);
+    border-radius: 10px;
+}
+#excelButtons{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: absolute;
+
+    backdrop-filter: blur(2px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.26);
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.excelButton{
+    height: 25px;
+    width: 25px;
+
+    background-color: var(--backgroundColor);
+    border: solid 1px black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#first{
+    background-color: var(--accentBackgroundColor);
+}
+#stop{
+    background-color: red;
+}
+#start{
+    background-color: green;
+}
+#mainImg img{
+    width: 100%;
+}
+
+@media(max-width:640px){
+    #buttonAlign{
+        height: 15px;
+        width: 60%;
+    }
+    .excelButton{
+        height: 15px;
+        width: 15px;
+    }
+}
+@media(max-width:300px){
+    #buttonAlign{
+        width: 80%;
+        top: 100%;
+    }
+}
