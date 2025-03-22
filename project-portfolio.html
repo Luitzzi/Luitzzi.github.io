@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/general-settings.css">
+    <link rel="stylesheet" href="/css/projects/projects-header.css">
+    <link rel="stylesheet" href="/css/projects/project-portfolio-section.css">
+    <link rel="stylesheet" href="/css/projects/projects-footer.css">
+
+    <script src="/js/general-script.js" defer></script>
+    <script src="/js/project-portfolio.js" defer></script>
+
+    <title>Meine Portfolio Webseite</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="navLogo"><img src="images/header/nav-bar/logo-lg.png" alt="Logo-Luis Gerlinger"></a>
+            <input type="checkbox" id="toggleButton">
+            <label for="toggleButton" class="toggleButton">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul id="navBox">
+                <li class="vanishOnClick">
+                    <a href="/index.html#scrollPointAboutMe" class="german">Über mich</a>
+                    <a href="/index.html#scrollPointAboutMe" class="english">About Me</a>
+                </li>
+                <li class="vanishOnClick">
+                    <a href="/index.html#sectionProjects" class="german">Projekte</a>
+                    <a href="/index.html#sectionProjects" class="english">Projects</a>
+                </li>
+                <li class="vanishOnClick">
+                    <a href="/project-portfolio.html#kontaktBox" class="german">Kontakt</a>
+                    <a href="/project-portfolio.html#kontaktBox" class="english">Contact</a>
+                </li>
+                <li class="expandableLi">
+                    <input type="checkbox" id="languagesCheckbox">
+                    <label for="languagesCheckbox"><img class="languageImage" src="/images/header/nav-bar/languages.png" alt=""></label>
+                        <ul class="dropdown" id="dropdown">
+                            <li id="german">
+                                <img src="/images/header/nav-bar/flag-de.png" alt="">
+                            </li>
+                            <li id="english">
+                                <img src="/images/header/nav-bar/flag-en.png" alt="">
+                            </li>
+                        </ul>
+                </li>
+                <li id="liDarkMode">
+                    <input type="checkbox" name="" id="darkModeCheckbox">
+                    <label for="darkModeCheckbox" id="darkModeLabel"></label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div id="projectBox">
+            <div id="displayBox">
+
+                <div id="headline">
+                    <h2 class="german">Meine Portfolio Webseite</h2>
+                    <h2 class="english">My portfolio website</h2>
+                </div>
+
+                <div id="origin">
+                    <h3 class="german">Entstehungsgeschichte</h3>
+                    <h3 class="english">Story of its origin</h3>
+                        <p class="german">Während meiner Kochausbildung wuchs mein Interesse an der Informatik immer mehr und mehr, sodass ich nach einer Einstiegsmöglichkeit in die Programmierung suchte. Über Youtube Videos kam ich auf das Web-Development und begann erstmal mit dem Nachbau von Webseiten. Nachdem dies immer besser klappte formte sich die Idee eine eigene Webseite zu erstellen.<br>Die Bildercollage zeigt kleine Ausschnitte des Entstehungsweges.</p>
+                        <p class="english">While I was working in the kitchen, I discovered an interest in computer science. Given that nowadays this topic is involved in nearly every industry sector, it was hard to find a starting point into this huge field. Trough YouTube videos I came across web-development with HTML, CSS and JS as a comfortable access point to programming. Therefore, I began to reverse engineer websites and my interest in computer science grew and grew. After I understood the basics of HTML and CSS I started my first project - my own portfolio website.<br> Following is a short display of the different development stages.</p>
+                </div>
+
+                <div id="display">
+                    <div id="pictureOne" class="displayImages">
+                    <div class="dImage">
+                        <img src="/images/projects-pages/website/projects-website-3.png" alt="">
+                        <div class="overlay">   
+                            <div class="overlayObject">
+                                <p class="german">Erstentwurf</p>
+                                <p class="english">First draft</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dText">
+                        <div class="dTextBox">
+                            <div class="textGap">
+                                <h4 class="german">Erster Entwurf</h4>
+                                <h4 class="english">First draft</h4>
+                                <p>
+                                    <ul class="german">
+                                        <li class="mainList">Erste Designidee</li>
+                                        <li class="mainList">Erstellen der Grundstruktur
+                                            <ul class="inserted german">
+                                                <li>Navigations-Leiste</li>
+                                                <li>Opener-Seite</li>
+                                                <li>"Über Mich" Sektion</li>
+                                                <li>Auflistung meiner Projekte</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="english">
+                                        <li class="mainList">Creating the first design plans</li>
+                                        <li class="mainList">Establishing the basic structure
+                                            <ul class="inserted english">
+                                                <li>Navigation bar</li>
+                                                <li>Opener page</li>
+                                                <li>"About Me" section</li>
+                                                <li>Overview over my projects</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="pictureTwo" class="displayImages displayBorder">
+                    <div class="dImage">
+                        <img src="/images/projects-pages/website/projects-website-2.png" alt="">
+                        <div class="overlay">   
+                            <div class="overlayObject">
+                                <p class="german">PC - Ansicht</p>
+                                <p class="english">Second draft</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dText">
+                        <div class="dTextBox">
+                            <div class="textGap">
+                                <h4 class="german">Zweiter Entwurf</h4>
+                                <h4 class="english">Second draft</h4>
+                                <p>
+                                    <ul class="german">
+                                        <li class="mainList extra">Detaillierte Ausplanung der einzelnen Sektionen in der PC-Ansicht
+                                            <ul class="inserted extra german" >
+                                                <li >Überarbeitung der Opener Seite</li>
+                                                <li >Integration des Text-Elements in das "Über Mich" Bild</li>
+                                                <li >Anordnung der Projekte in einem Grid-Box Layout</li>
+                                                <li >Design des Footers</li>
+                                            </ul>
+                                        </li>
+                                        <li id="mainListExtra">Aufgrund der Planung der PC-Ansicht ohne Berücksichtigung der mobilen Variante gelang es mir nicht die Webseite responsiv zu gestalten. In Folge dessen erstellte ich nochmal einen neuen Entwurf.</li>
+                                    </ul>
+                                    <ul class="english">
+                                        <li class="mainList extra">Creating an in-depth plan of the different sections
+                                            <ul class="inserted extra english" >
+                                                <li >Redesigning the opener page</li>
+                                                <li >Integrating the text element inside the "About Me" picture</li>
+                                                <li >Arranging the projects in a grid-box layout</li>
+                                                <li >Developing the footer</li>
+                                            </ul>
+                                        </li>
+                                        <li id="mainListExtra">Due to the fact that I only planned the view on a computer display without any consideration of a mobile version, I ran into huge difficulties regarding responsiveness. Therefore, I had to go back to the drawing board and start all over again... </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="pictureThree" class="displayImages displayBorder">
+                    <div class="dImage">
+                        <img src="/images/projects-pages/website/projects-website-1.png" alt="">
+                        <div class="overlay">   
+                            <div class="overlayObject">
+                                <p class="german">Finaler responsiver Entwurf</p>
+                                <p class="english">Final responsive design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dText">
+                        <div class="dTextBox">
+                            <div class="textGap">
+                                <h4 class="german">Finaler responsiver Entwurf</h4>
+                                <h4 class="english">Final planning</h4>
+                                <p>
+                                    <ul class="german">
+                                        <li class="mainList">Finale Planung unter Berücksichtigung der Mobile-Variante
+                                            <ul class="inserted german">
+                                                <li>Responsive Nav-Bar mit Dropdownmenü nach Buttonclick</li>
+                                                <li>Anordnung der "Über Mich" Sektion mit Flex-Box und Flex-wrap</li>
+                                                <li>Implementierung der Responsivität für die Grid-Box Elemente und den Footer</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mainList">Speicherung des Zustandes vom "Dark-Mode" Button und der ausgewählten Sprache im lokalen Speicher.</li>
+                                    </ul>
+                                    <ul class="english">
+                                        <li class="mainList">Final planning considering also the mobil version
+                                            <ul class="inserted english">
+                                                <li>Making the nav-bar dropdown menu responsive after the buttonclick</li>
+                                                <li>Arranging the "About Me" section with flex-box and flex-wrap</li>
+                                                <li>Implementing responsiveness to footer with grid-box</li>
+                                            </ul>
+                                        </li>
+                                        <li class="mainList">Saving the state of the "Dark-Mode" button and the chosen language in the local storage</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div id="summary">
+                    <div id="summaryHeadline">
+                        <h3 class="german">Zusammenfassung</h3>
+                        <h3 class="english">Summary</h3>
+                    </div>
+                    <div id="summaryImage">
+                        <img class="displayed" id="websiteImg1" src="/images/projects-pages/website/projects-website-3.png" alt="">
+                        <img class="hidden" id="websiteImg2" src="/images/projects-pages/website/projects-website-2.png" alt="">
+                        <img class="hidden" id="websiteImg3" src="/images/projects-pages/website/projects-website-1.png" alt="">
+                        <div id="buttonAlign">
+                            <div id="timeBar">
+                            </div>
+                            <div id="websiteButtons">
+                                    <span class="websiteButton" id="first"></span>
+                                    <span class="websiteButton" id="second"></span>
+                                    <span class="websiteButton" id="third"></span>
+                                    <span class="websiteButton" id="stop"></span>
+                                    <span class="websiteButton" id="start"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <footer id="footer">
+        <div id="kontaktBox">
+            <h2 class="german">Kontakt</h3>
+            <h2 class="english">Contact</h3>
+            <ul id="sozialMediaIcons">
+                <li class="imgKontakt">
+                    <a href="https://www.linkedin.com"><img src="/images/footer/sozial-media-icons/linkedin-icon.png" alt="" class="imgIcon"></a>
+                </li>
+                <li class="imgKontakt">
+                    <a href="https://www.twitter.com"><img src="/images/footer/sozial-media-icons/twitter-icon.png" alt="" class="imgIcon"></a>
+                </li>
+                <li class="imgKontakt">
+                    <a href="https://www.instagram.com"><img src="/images//footer/sozial-media-icons/instagram-icon.png" alt="" class="imgIcon"></a>
+                </li>
+                <li class="imgKontakt">
+                    <a href="https://www.facebook.com"><img src="/images/footer/sozial-media-icons/facebook-icon.png" alt="" class="imgIcon"></a>
+                </li>
+                <li class="imgKontakt">
+                    <a href="https://www.youtube.com"><img src="/images/footer/sozial-media-icons/youtube-icon.png" alt="" class="imgIcon"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="impressumBox">
+                <h3>Impressum</h3>
+                <div id="impressumDates">
+                    <table>
+                        <tr>
+                            <td><img src="/images/footer/impressum-icons/autor-icon.png" alt="" class="impressumImg"></td>
+                            <td class="tableDate">Luis Gerlinger</td>
+                        </tr>
+                        <tr>
+                            <td><img class="impressumImg" src="/images/footer/impressum-icons/mail-icon.png" alt=""></td>
+                            <td class="tableDate">luis-gerlinger@web.de</td>
+                        </tr>
+                        <tr>
+                            <td><img class="impressumImg" src="/images/footer/impressum-icons/phone-icon.png" alt=""></td>
+                            <td class="tableDate">0123 456789</td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/footer/impressum-icons/standort-icon.png" alt="" class="impressumImg"></td>
+                            <td class="tableDate">Musterstraße 3a, 12345 Musterort</td>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/footer/impressum-icons/website-icon.png" alt="" class="impressumImg"></td>
+                            <td class="tableDate"><a href="">luis-gerlinger.de</a></td>
+                        </tr>
+                    </table>
+                </div>
+        </div> 
+    </footer>
+    
+</body>
+</html>
