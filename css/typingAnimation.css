@@ -1,0 +1,101 @@
+#headerOpener{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 90px;
+    background-color: black;
+  
+    background-image: linear-gradient(var(--darkerBackgroundColor),var(--darkerBackgroundColor));
+    background-size: 100% 30%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  #typing-line-1{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--firstLine);
+    margin-top: 10px;
+  }
+  
+  #typing-line-2{
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--secondLine);
+    background-color: black;
+    margin-top: 10px;
+  }
+  
+  .text-container {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid var(--darkerBackgroundColor);
+    color: var(--backgroundColor);
+  }
+  
+  .blinking-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 24px;
+    background-color: black;
+    animation: blink 0.6s infinite;
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  
+  .fixed-space {
+    min-height: 45px;
+    text-align: center;
+  }
+  
+  .no-cursor{
+    border-right: none;
+  }
+
+  /* Responsive Text Sizes */
+  @media (max-width: 400px) {
+    #headerOpener{
+        height: 80px;
+    }
+    #typing-line-1{ 
+        font-size: 30px;
+    }
+    #typing-line-2{
+        font-size: 20px;
+    }
+    .fixed-space{
+        min-height: 25px;
+    }
+}
+@media (min-width: 401px) and (max-width: 600px) {
+    #headerOpener{
+        height: 90px;
+    }
+    #typing-line-1{ 
+        font-size: 35px;
+    }
+    #typing-line-2{
+        font-size: 25px;
+    }
+    .fixed-space{
+        min-height: 30px;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    #headerOpener{
+        height: 100px;
+    }
+    #typing-line-1{ 
+        font-size: 40px;
+    }
+    #typing-line-2{
+        font-size: 30px;
+    }
+    .fixed-space{
+        min-height: 35px;
+    }
+}

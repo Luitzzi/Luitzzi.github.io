@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="/css/section-one.css">
     <link rel="stylesheet" href="/css/section-two.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/typingAnimation.css">
 
     <script src="/js/general-script.js" defer></script>
     <script src="/js/firstPage.js" defer></script>
+    <script src="/js/typingAnimation.js" defer></script>
 
     <title>Luis Gerlinger</title>
 </head>
@@ -63,17 +65,27 @@
         </nav>
         <div id="headerContainer">
             <div id="headerOpener">
-                <img class="german" class="test" src="/images/header/nav-bar/opener-de.png" alt="Luis Gerlinger - Passionierter Web-Developer und Koch mit Leidenschaft">
-                <img class="english" src="/images/header/nav-bar/opener-en.png" alt="Luis Gerlinger - Impassioned Web-Developer and chef with delight">
+                <div id="typing-line-1" class="text-container"></div>
+                <div id="typing-line-2" class="text-container fixed-space"></div>
                 <div id="scrollPointAboutMe"></div>
             </div>
         </div>
         
     </header>
     <section id="sectionAboutMe">
-        <div id="aboutMeImg">
-            <img class="german" src="/images/sections/section-one/about-me-header-de.png" alt="Über mich">
-            <img class="english" src="/images/sections/section-one/about-me-header-en.png" alt="About Me">
+        <div id="secOneText">
+            <h2 class="secOneFont german">Über Mich</h2>
+            <h2 class="secOneFont english">About Me</h2>
+            <div id="secOnePoem">
+                <p class="secOneFont german">Ein begnadeter Koch mit flinken Händen,<br> entscheidet sich für Codes, die die Welt verändern.<br>Den Kochlöffel legt er vorerst beiseite,<br>nun öffnet er die Tür zur digitalen Weite.</p>
+                <p class="secOneFont german">Informatik, ein neues Abenteuer entfacht,<br>Programmiersprachen werden zu seiner Pracht.<br>Er lernt die Algorithmen, die die Welt regieren,<br>und bringt seine Kreativität in Codes zum Flirren.</p>
+                <p class="secOneFont german">Ein Koch, der nun in Binärcode kocht,<br>die Fusion von Aromen und Logik sucht.<br>Die Küche und die Technik verbindet er geschickt,<br>ein Meisterwerk aus Bytes und Gewürzen entzückt.<br></p>
+                <p class="secOneFont german" id="gpt">- Chat GPT</p>
+                <p class="secOneFont english">In a bustling kitchen's fiery domain,<br>a chef's passion simmered, his love aflame.<br>With knives and spices, he created delights,<br>but a new path beckoned, beyond those nights.</p>
+                <p class="secOneFont english">In the realm of computer science, he set sail,<br>to unravel the mysteries, without fail.<br>Bytes and algorithms now danced in his head,<br>as he traded chef's hat for lines, thread by thread.</p>
+                <p class="secOneFont english">With every line of code, his hunger grew,<br>to build systems that harmonized and slew.<br>From sautéed flavors to algorithms grand,<br>he found connections, like a master's hand.</p>
+                <p class="secOneFont english">- Chat GPT</p>
+            </div>
         </div>
         <div id="secOneBgImg">
             
@@ -91,20 +103,7 @@
                     <img src="/images/sections/section-one/about-me-arrowr.png" alt="">
                 </span>
         </div>
-        <div id="secOneText">
-            <h2 class="secOneFont german" id="test">Über Mich</h2>
-            <h2 class="secOneFont english" id="test">About Me</h2>
-            <div id="secOnePoem">
-                <p class="secOneFont german">Ein begnadeter Koch mit flinken Händen,<br> entscheidet sich für Codes, die die Welt verändern.<br>Den Kochlöffel legt er vorerst beiseite,<br>nun öffnet er die Tür zur digitalen Weite.</p>
-                <p class="secOneFont german">Informatik, ein neues Abenteuer entfacht,<br>Programmiersprachen werden zu seiner Pracht.<br>Er lernt die Algorithmen, die die Welt regieren,<br>und bringt seine Kreativität in Codes zum Flirren.</p>
-                <p class="secOneFont german">Ein Koch, der nun in Binärcode kocht,<br>die Fusion von Aromen und Logik sucht.<br>Die Küche und die Technik verbindet er geschickt,<br>ein Meisterwerk aus Bytes und Gewürzen entzückt.<br></p>
-                <p class="secOneFont german" id="gpt">- Chat GPT</p>
-                <p class="secOneFont english">In a bustling kitchen's fiery domain,<br>a chef's passion simmered, his love aflame.<br>With knives and spices, he created delights,<br>but a new path beckoned, beyond those nights.</p>
-                <p class="secOneFont english">In the realm of computer science, he set sail,<br>to unravel the mysteries, without fail.<br>Bytes and algorithms now danced in his head,<br>as he traded chef's hat for lines, thread by thread.</p>
-                <p class="secOneFont english">With every line of code, his hunger grew,<br>to build systems that harmonized and slew.<br>From sautéed flavors to algorithms grand,<br>he found connections, like a master's hand.</p>
-                <p class="secOneFont english">- Chat GPT</p>
-            </div>
-        </div>
+        
         
     </section>
     <section id="sectionProjects">
@@ -193,8 +192,8 @@
     </section>
     <footer>
         <div id="kontaktBox">
-            <h2 class="german">Kontakt</h3>
-            <h2 class="english">Contact</h3>
+            <h2 class="german">Kontakt</h2>
+            <h2 class="english">Contact</h2>
             <ul id="sozialMediaIcons">
                 <li class="imgKontakt">
                     <a href="https://www.linkedin.com"><img src="/images/footer/sozial-media-icons/linkedin-icon.png" alt="" class="imgIcon"></a>

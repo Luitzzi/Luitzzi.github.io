@@ -287,9 +287,6 @@ nav li:hover{
 }
 
 @media(max-height:740px){
-    #headerOpener{
-        padding-bottom: 20px;
-    }
     #headerOpener img{
         width: 350px;
     }
