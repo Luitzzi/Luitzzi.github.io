@@ -1,3 +1,8 @@
+#weathertop img{
+    object-fit: fill;
+}
+
+
 #sectionProjects{
     height: auto;
     padding-top: 80px;
