@@ -31,38 +31,39 @@ if (localStorage.getItem("darkMode") == "dark"){
 
 
 let german = document.getElementById("german");
-let germanText = document.getElementsByClassName("german");
-
+let germanText = document.getElementsByClassName("german")
 let english = document.getElementById("english");
-let englishText = document.getElementsByClassName("english");
+let englishText = document.getElementsByClassName("english")
 
-english.addEventListener("click", changeLanguageEnglish);
+german.addEventListener("click", () => changeLanguage("german"));
+english.addEventListener("click", () => changeLanguage("english"));
 
-function changeLanguageEnglish(){
-    localStorage.setItem("language","english"); //safes picked language in local storage
-    for (let i = 0;i < englishText.length; i++){
-        englishText[i].style.display = "flex";
-        germanText[i].style.display = "none";
+function changeLanguage(language) {
+    localStorage.setItem("language", language);
+
+    if (language === "english") {
+        for (let i = 0;i < englishText.length; i++){
+            englishText[i].style.display = "flex";
+            germanText[i].style.display = "none";
+        }
+        startTyping("english");
+    } else {
+        for (let i = 0;i < germanText.length; i++){
+            germanText[i].style.display = "flex";
+            englishText[i].style.display = "none";
+        }
+        startTyping("german");
     }
 }
 
-german.addEventListener("click", changeLanguageGerman);
+// Load language from local storage on page load
+localStorage.setItem("language", "english")
+startTyping("english")
 
-function changeLanguageGerman(){
-    localStorage.setItem("language","german"); //safes picked language in local storage
-    for (let i = 0;i < englishText.length; i++){
-        germanText[i].style.display = "flex";
-        englishText[i].style.display = "none";
-    }
-}
-
-//Load language from local storage
-if (localStorage.getItem("language") == "english"){
-    changeLanguageEnglish();
-}
-
-
-
+// Start typing animation with the default language
+document.addEventListener("DOMContentLoaded", () => {
+    startTyping(localStorage.getItem("language"));
+});
 
     /* Languages Media Nav-Bar fix*/
 

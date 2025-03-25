@@ -44,10 +44,10 @@
 
 /* Languages Classes*/
 .german{
-    display: flex;
+    display: none;
 }
 .english{
-    display: none;
+    display: flex;
 }
 
 /*About-Me Bg Images Classes*/
